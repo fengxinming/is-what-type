@@ -2,8 +2,7 @@ name: Build and Deploy to GitHub Pages
 
 on:
   pull_request:
-    branches:
-      - main  # 仅当代码推送到 main 分支时触发
+    branches: [main]  # pull request 时触发
       
   workflow_dispatch:  # 手动触发配置
     # inputs:          # 可选：定义输入参数
@@ -15,6 +14,12 @@ on:
 env:
   base_url: /is-what-type/
 
+# 设置 GITHUB_TOKEN 的读写权限
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+      
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -22,55 +27,24 @@ concurrency:
   cancel-in-progress: true
         
 jobs:
-  build-deploy:
-    # 设置 GITHUB_TOKEN 的读写权限
-    permissions:
-      contents: read
-      id-token: write
-      pages: write
-      deployments: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
-      # ----------------------------
-      # 第一步：检出代码
-      # ----------------------------
-      - name: Checkout repository
+      - name: 检出代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 获取完整提交历史（用于 gh-pages 提交记录）
-
-      # ----------------------------
-      # 第二步：设置 Node.js 环境
-      # ----------------------------
-      - name: Setup Node.js
+      - name: 安装Node环境
         uses: actions/setup-node@v4
         with:
           node-version: 20  # 指定 Node.js 版本
-
-      # ----------------------------
-      # 第三步：安装依赖并构建
-      # ----------------------------
       - run: npm run clean
       - run: npm i
       - run: npm run typedoc      # 将ts文件构建成md文件
       - run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
         env:
-          BASE_URL: ${{ steps.configuration.outputs.base_url }}
-      
-      # ----------------------------
-      # 第四步：部署到 gh-pages
-      # ----------------------------
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v4
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}  # 自动生成的 GitHub Token
-      #     publish_dir: ./docs/.vitepress/dist        # 构建产物目录
-      #     keep_files: false                          # 是否保留 gh-pages 现有文件
-      #     force_orphan: true                         # 强制清空历史（仅保留最新部署）
-      - name: Setup Pages
+          BASE_URL: ${{ github.workflow }}
+      - name: 配置 Pages
         id: configuration
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -78,6 +52,21 @@ jobs:
         with:
           # Upload entire repository
           path: './docs/.vitepress/dist'
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}  # 自动生成的 GitHub Token
+      #     publish_dir: ./docs/.vitepress/dist        # 构建产物目录
+      #     keep_files: false                          # 是否保留 gh-pages 现有文件
+      #     force_orphan: true                         # 强制清空历史（仅保留最新部署）
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
