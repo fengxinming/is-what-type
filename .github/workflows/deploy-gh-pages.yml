@@ -23,7 +23,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: ${{ github.workflow }}
+  group: pages
   cancel-in-progress: true
         
 jobs:
@@ -43,7 +43,7 @@ jobs:
       - run: npm run typedoc      # 将ts文件构建成md文件
       - run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
         env:
-          BASE_URL: ${{ github.workflow }}
+          BASE_URL: ${{ steps.configuration.output.pages.base_url }}
       - name: 配置 Pages
         id: configuration
         uses: actions/configure-pages@v5
