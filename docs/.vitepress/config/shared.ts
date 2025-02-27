@@ -11,7 +11,10 @@ export const shared = defineConfig({
   rewrites: {
     'en/:rest*': ':rest*'
   },
+  base: process.env.BASE_URL || '/',
 });
+
+console.log('process.env.BASE_URL', process.env.BASE_URL);
 
 export function generateAPISidebar(apiDir: string, linkPath: string): DefaultTheme.SidebarItem[] {
   const exclude = ['index', 'modules'];
