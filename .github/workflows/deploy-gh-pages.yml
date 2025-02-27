@@ -6,11 +6,23 @@ on:
       - main  # 仅当代码推送到 main 分支时触发
       
   workflow_dispatch:  # 手动触发配置
-    inputs:          # 可选：定义输入参数
-      environment:
-        description: 'Deploy environment'
-        required: true
-        default: 'production'
+    # inputs:          # 可选：定义输入参数
+    #   environment:
+    #     description: 'Deploy environment'
+    #     required: true
+    #     default: 'production'
+
+# 设置 GITHUB_TOKEN 的读写权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
         
 jobs:
   build-deploy:
