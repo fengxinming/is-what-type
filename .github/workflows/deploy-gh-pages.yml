@@ -68,9 +68,6 @@ jobs:
       - name: Setup Pages
         id: configuration
         uses: actions/configure-pages@v5
-      - run: npm run build:docs
-        env:
-          BASE_URL: ${{ steps.configuration.base_url }}/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
