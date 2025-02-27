@@ -35,14 +35,10 @@ jobs:
       # ----------------------------
       # 第三步：安装依赖并构建
       # ----------------------------
-      - name: Install dependencies
-        run: npm run deps          # 使用精确版本安装依赖
-
-      - name: TS code to markdown files
-        run: npm run typedoc
-
-      - name: Build docs
-        run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
+      - run: npm run clean
+      - run: npm i
+      - run: npm run typedoc      # 将ts文件构建成md文件
+      - run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
       
       # ----------------------------
       # 第四步：部署到 gh-pages
