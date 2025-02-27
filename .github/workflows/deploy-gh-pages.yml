@@ -55,7 +55,7 @@ jobs:
       - run: npm run typedoc      # 将ts文件构建成md文件
       - run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
         env:
-          BASE_URL: /is-what-type/
+          BASE_URL: ${{ environment.url }}
       
       # ----------------------------
       # 第四步：部署到 gh-pages
