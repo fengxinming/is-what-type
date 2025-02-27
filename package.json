@@ -26,8 +26,8 @@
     "eslint": "eslint --ext .js,.mjs,.jsx,.ts,.tsx --fix --ignore-path .eslintignore ./",
     "prepare": "husky",
     "docs:dev": "pnpm run --filter=docs vitepress:dev",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "pnpm run --filter=docs vitepress:build",
+    "docs:preview": "pnpm run --filter=docs vitepress:preview"
   },
   "keywords": [
     "util",
