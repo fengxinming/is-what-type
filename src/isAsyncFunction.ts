@@ -5,8 +5,15 @@ import getType from './getType';
  *
  * @example
  * ```js
- * isAsyncFunction(async () => { });      //true
- * isAsyncFunction(() => { });      //false
+ * import { isAsyncFunction } from 'is-what-type';
+ *
+ * isAsyncFunction(async () => { }); // true
+ * isAsyncFunction(() => { }); // false
+ * isAsyncFunction(function() { }); // false
+ * isAsyncFunction(async function() { }); // true
+ * isAsyncFunction(123); // false
+ * isAsyncFunction('string'); // false
+ * isAsyncFunction({}); // false
  * ```
  *
  * @param value - The value to check

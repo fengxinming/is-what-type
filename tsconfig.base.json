@@ -14,6 +14,7 @@
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "removeComments": false,
     "jsx": "preserve",
@@ -22,6 +23,9 @@
       "DOM"
     ]
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "./vite-env.d.ts"
   ]

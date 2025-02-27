@@ -1,0 +1,14 @@
+{
+  "name": "docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vitepress:dev": "vitepress dev",
+    "vitepress:build": "vitepress build",
+    "vitepress:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-group-icons": "^1.3.6"
+  }
+}

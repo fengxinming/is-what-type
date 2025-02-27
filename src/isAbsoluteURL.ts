@@ -6,11 +6,18 @@ const PROTOCOL = /^([a-z][a-z\d+\-.]*:)?\/\//i;
  *
  * @example
  * ```js
- * isAbsoluteURL('/src/isAbsoluteURL.js');   // false
- * isAbsoluteURL('https://github.com');   // true
+ * import { isAbsoluteURL } from 'is-what-type';
+ *
+ * isAbsoluteURL('https://example.com'); // true
+ * isAbsoluteURL('/foo/bar'); // false
+ * isAbsoluteURL('ftp://example.com'); // true
+ * isAbsoluteURL('mailto:foo@bar.com'); // true
+ * isAbsoluteURL('file:///usr/bin/myfile'); // true
+ * isAbsoluteURL('//example.com'); // true
+ * isAbsoluteURL('example.com'); // false
  * ```
  *
- * @param url - The value to check.
+ * @param value - The value to check.
  * @returns `true` if the value is an absolute URL, `false` otherwise.
  */
 export default function isAbsoluteURL(value: any): boolean {

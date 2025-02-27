@@ -3,6 +3,8 @@
  *
  * @example
  * ```js
+ * import { getType } from 'is-what-type';
+ *
  * getType(null) // => 'Null'
  * getType(undefined) // => 'Undefined'
  * getType(1) // => 'Number'

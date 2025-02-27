@@ -4,9 +4,15 @@
  *
  * @example
  * ```js
- * isNil(null);  // true
- * isNil(undefined);  // true
- * isNil({});  // false
+ * import { isNil } from 'is-what-type';
+ *
+ * isNil(null); // true
+ * isNil(undefined); // true
+ * isNil({}); // false
+ * isNil(''); // false
+ * isNil(0); // false
+ * isNil(false); // false
+ * isNil(NaN); // false
  * ```
  *
  * @param value - The value to check

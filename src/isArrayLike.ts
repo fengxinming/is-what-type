@@ -5,11 +5,15 @@ import isLength from './isLength';
  *
  * @example
  * ```js
- * isArrayLike('123');    //true
- * isArrayLike(() => { });    //false
- * isArrayLike([]);    //true
- * isArrayLike([1, 2, 3]);    //true
- * isArrayLike({ 0: 1, length: 1 });    //true
+ * import { isArrayLike } from 'is-what-type';
+ *
+ * isArrayLike([1, 2, 3]); // true
+ * isArrayLike('hello'); // true
+ * isArrayLike({ length: 3, 0: 'a', 1: 'b', 2: 'c' }); // true
+ * isArrayLike(function() {}); // false
+ * isArrayLike(null); // false
+ * isArrayLike(undefined); // false
+ * isArrayLike({}); // false
  * ```
  *
  * @param value - The value to check

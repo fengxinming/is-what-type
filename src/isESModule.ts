@@ -9,8 +9,15 @@ const hasSymbol
  *
  * @example
  * ```js
- * isESModule({})
- * // false
+ * import { isESModule } from 'is-what-type';
+ *
+ * isESModule({}); // false
+ * isESModule({ __esModule: true }); // true
+ * isESModule({ [Symbol.toStringTag]: 'Module' }); // true
+ * isESModule('string'); // false
+ * isESModule(123); // false
+ * isESModule(null); // false
+ * isESModule(undefined); // false
  * ```
  *
  * @param value THe value to check
