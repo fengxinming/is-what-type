@@ -44,7 +44,7 @@ jobs:
       - run: npm run typedoc      # 将ts文件构建成md文件
       - run: npm run docs:build   # 执行构建命令（生成 dist/ 目录）
         env:
-          BASE_URL: ${{ steps.configuration.output.pages.base_url }}
+          BASE_URL: ${{ env.base_url }}
       - name: 配置 Pages
         id: configuration
         uses: actions/configure-pages@v5
