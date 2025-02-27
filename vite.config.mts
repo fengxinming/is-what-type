@@ -8,6 +8,7 @@ import pkg from './package.json';
 
 function buildUMD() {
   let currentCmd: string;
+
   return {
     name: 'build-umd',
     config(config, { command }) {
