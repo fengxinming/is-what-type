@@ -45,6 +45,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
+          cache: npm
           node-version: 20  # 指定 Node.js 版本
 
       # ----------------------------
@@ -67,7 +68,7 @@ jobs:
       #     force_orphan: true                         # 强制清空历史（仅保留最新部署）
       - name: Setup Pages
         id: configuration
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - run: npm run build:docs
         env:
           BASE_URL: ${{ steps.configuration.base_url }}/
