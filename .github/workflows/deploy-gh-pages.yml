@@ -66,7 +66,11 @@ jobs:
       #     keep_files: false                          # 是否保留 gh-pages 现有文件
       #     force_orphan: true                         # 强制清空历史（仅保留最新部署）
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - id: configuration
+        uses: actions/configure-pages@v4
+      - run: npm run build:docs
+        env:
+          BASE_URL: ${{ steps.configuration.base_url }}/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
