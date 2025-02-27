@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src",
+    "test",
+    "docs/.vitepress/**/*.ts",
+    "vite-env.d.ts",
+    "vite.config.mts"
+   ]
+}
