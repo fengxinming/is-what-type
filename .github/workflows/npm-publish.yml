@@ -15,8 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm run clean
-      - run: npm i
+      - run: npm run deps
       - run: npm test
 
   publish-npm:
@@ -28,8 +27,8 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: npm run clean
-      - run: npm i
+      - run: npm run deps
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
