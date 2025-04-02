@@ -23,7 +23,7 @@ const hasSymbol
  * @param value THe value to check
  * @returns `true` if the value is an ES Module, else `false`
  */
-export default function isESModule<T = unknown>(value: T): value is T {
+export default function isESModule<T = object>(value: unknown): value is T {
   return isObject(value)
     && ((value as any).__esModule || (hasSymbol && value[Symbol.toStringTag] === 'Module'));
 }

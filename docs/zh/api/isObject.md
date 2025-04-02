@@ -10,11 +10,17 @@
 
 ### default()
 
-> **default**(`value`): `value is object`
+> **default**\<`T`\>(`value`): `value is T`
 
-定义于: [isObject.ts:25](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isObject.ts#L25)
+定义于: [isObject.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isObject.ts#L25)
 
 Check if the value is an object.
+
+#### 类型参数
+
+##### T
+
+`T` = `object`
 
 #### 参数
 
@@ -26,7 +32,7 @@ The value to check
 
 #### 返回
 
-`value is object`
+`value is T`
 
 `true` if the value is an object, `false` otherwise
 

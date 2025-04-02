@@ -8,9 +8,9 @@
   "entryFileName": "index",
   "lang": "zh",
   "plugin": [
-    "typedoc-plugin-markdown"
+    "typedoc-plugin-markdown",
   ],
   "out": "docs/zh/api",
-  "readme": "README_zh_CN.md",
+  "readme": "index_zh_CN.md",
   "tsconfig": "./tsconfig.typedoc.json"
 }

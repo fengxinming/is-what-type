@@ -12,13 +12,15 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-Defined in: [isPromiseLike.ts:25](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isPromiseLike.ts#L25)
+Defined in: [isPromiseLike.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isPromiseLike.ts#L25)
 
 Check if the value is a Promise-like object.
 
 #### Type Parameters
 
-• **T** = `unknown`
+##### T
+
+`T` = `unknown`
 
 #### Parameters
 

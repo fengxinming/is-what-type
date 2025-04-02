@@ -12,19 +12,21 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-定义于: [isESModule.ts:26](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isESModule.ts#L26)
+定义于: [isESModule.ts:26](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isESModule.ts#L26)
 
 Check if the value is an ES Module
 
 #### 类型参数
 
-• **T** = `unknown`
+##### T
+
+`T` = `object`
 
 #### 参数
 
 ##### value
 
-`T`
+`unknown`
 
 THe value to check
 

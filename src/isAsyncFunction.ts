@@ -1,4 +1,5 @@
 import getType from './getType';
+import { AsyncFunction } from './typings';
 
 /**
  * Check if value is an async function
@@ -19,6 +20,6 @@ import getType from './getType';
  * @param value - The value to check
  * @returns `true` if `value` is an async function, `false` otherwise
  */
-export default function isAsyncFunction<T = unknown>(value: T): value is T {
+export default function isAsyncFunction<T = AsyncFunction>(value: unknown): value is T {
   return getType(value) === 'AsyncFunction';
 }

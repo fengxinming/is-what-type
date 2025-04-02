@@ -1,13 +1,13 @@
 # is-what-type
 
-[![npm 包](https://nodei.co/npm/is-what-type.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-what-type)
+[![npm package](https://nodei.co/npm/is-what-type.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-what-type)
 
-> 一个简单的类型检查的工具库。
+> A simple utility library for type checking.
 
-[![NPM 版本](https://img.shields.io/npm/v/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
-[![NPM 下载量](https://img.shields.io/npm/dm/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
+[![NPM Version](https://img.shields.io/npm/v/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
+[![NPM Downloads](https://img.shields.io/npm/dm/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
 
-## 安装
+## Installation
 
 ::: code-group
 
@@ -29,20 +29,20 @@ bun add is-what-type
 
 :::
 
-## 特性介绍
+## Features
 
-- :clipboard: **API 数量**：提供了 15 个实用的类型检测函数。
-- :zap: **高效准确**：提供高效的类型检测函数，确保结果准确无误。
-- :book: **易于使用**：简洁明了的 API 设计，方便开发者快速上手。
-- :package: **兼容性强**：适用于 JavaScript 和 TypeScript 环境，确保代码兼容性。
-- :white_check_mark: **单元测试覆盖**：所有功能均经过全面的单元测试覆盖，确保代码质量。
-- :link: **无第三方依赖**：不依赖任何第三方库，保持轻量级。
+- :clipboard: **API Count**: Provides 15 practical type detection functions.
+- :zap: **Efficient & Accurate**: Efficient type detection functions with guaranteed accuracy.
+- :book: **Easy to Use**: Simple and intuitive API design for quick onboarding.
+- :package: **Compatibility**: Works in both JavaScript and TypeScript environments.
+- :white_check_mark: **Unit Test Coverage**: All features are fully covered by unit tests.
+- :link: **Zero Dependencies**: No third-party dependencies for lightweight usage.
 
-## API 列表
+## API List
 
 ### getType
 
-获取值的类型。
+Get the type of a value.
 
 ```typescript
 import { getType } from 'is-what-type';
@@ -65,21 +65,12 @@ console.log(getType(new WeakSet())); // 'WeakSet'
 console.log(getType(new Promise(() => {}))); // 'Promise'
 console.log(getType(Symbol())); // 'Symbol'
 console.log(getType(new Int8Array())); // 'Int8Array'
-console.log(getType(new Uint8Array())); // 'Uint8Array'
-console.log(getType(new Uint8ClampedArray())); // 'Uint8ClampedArray'
-console.log(getType(new Int16Array())); // 'Int16Array'
-console.log(getType(new Uint16Array())); // 'Uint16Array'
-console.log(getType(new Int32Array())); // 'Int32Array'
-console.log(getType(new Uint32Array())); // 'Uint32Array'
-console.log(getType(new Float32Array())); // 'Float32Array'
-console.log(getType(new Float64Array())); // 'Float64Array'
-console.log(getType(new BigInt64Array())); // 'BigInt64Array'
-console.log(getType(new BigUint64Array())); // 'BigUint64Array'
+// ... (other TypedArray examples)
 ```
 
 ### isAbsoluteURL
 
-检查值是否为绝对 URL。
+Check if a value is an absolute URL.
 
 ```typescript
 import { isAbsoluteURL } from 'is-what-type';
@@ -92,7 +83,7 @@ console.log(isAbsoluteURL('example.com')); // false
 
 ### isArrayLike
 
-检查值是否为类数组对象。
+Check if a value is an array-like object.
 
 ```typescript
 import { isArrayLike } from 'is-what-type';
@@ -106,7 +97,7 @@ console.log(isArrayLike({ 0: 1, length: 1 })); // true
 
 ### isAsyncFunction
 
-检查值是否为异步函数。
+Check if a value is an async function.
 
 ```typescript
 import { isAsyncFunction } from 'is-what-type';
@@ -121,7 +112,7 @@ console.log(isAsyncFunction({})); // false
 
 ### isESModule
 
-检查值是否为 ES 模块。
+Check if a value is an ES module.
 
 ```typescript
 import { isESModule } from 'is-what-type';
@@ -136,9 +127,23 @@ console.log(isESModule(generatorObject)); // false
 console.log(isESModule({})); // false
 ```
 
+### isFunction
+
+Check if a value is a function.
+
+```typescript
+import { isFunction } from 'is-what-type';
+
+isFunction(async () => { }); // true
+isFunction(() => { }); // true
+isFunction(123); // false
+isFunction('string'); // false
+isFunction({}); // false
+```
+
 ### isError
 
-检查值是否为错误对象。
+Check if a value is an error object.
 
 ```typescript
 import { isError } from 'is-what-type';
@@ -151,7 +156,7 @@ console.log(isError({})); // false
 
 ### isIterable
 
-检查值是否为可迭代对象。
+Check if a value is an iterable object.
 
 ```typescript
 import { isIterable } from 'is-what-type';
@@ -166,7 +171,7 @@ console.log(isIterable(undefined)); // false
 
 ### isLeapYear
 
-检查年份是否为闰年。
+Check if a year is a leap year.
 
 ```typescript
 import { isLeapYear } from 'is-what-type';
@@ -179,7 +184,7 @@ console.log(isLeapYear(2021)); // false
 
 ### isLength
 
-检查值是否为有效的类数组长度。
+Check if a value is a valid array-like length.
 
 ```typescript
 import { isLength } from 'is-what-type';
@@ -192,7 +197,7 @@ console.log(isLength('3')); // false
 
 ### isNil
 
-检查值是否为 `null` 或 `undefined`。
+Check if a value is `null` or `undefined`.
 
 ```typescript
 import { isNil } from 'is-what-type';
@@ -204,7 +209,7 @@ console.log(isNil({})); // false
 
 ### isNumber
 
-检查值是否为数字。
+Check if a value is a number.
 
 ```typescript
 import { isNumber } from 'is-what-type';
@@ -216,7 +221,7 @@ console.log(isNumber('1')); // false
 
 ### isObject
 
-检查值是否为对象。
+Check if a value is an object.
 
 ```typescript
 import { isObject } from 'is-what-type';
@@ -229,7 +234,7 @@ console.log(isObject(1)); // false
 
 ### isPlainObject
 
-检查值是否为普通对象。
+Check if a value is a plain object.
 
 ```typescript
 import { isPlainObject } from 'is-what-type';
@@ -243,7 +248,7 @@ console.log(isPlainObject(undefined)); // false
 
 ### isPromiseLike
 
-检查值是否为类似 Promise 的对象。
+Check if a value is a promise-like object.
 
 ```typescript
 import { isPromiseLike } from 'is-what-type';
@@ -256,7 +261,7 @@ console.log(isPromiseLike({})); // false
 
 ### isValidDate
 
-检查值是否为有效日期。
+Check if a value is a valid date.
 
 ```typescript
 import { isValidDate } from 'is-what-type';

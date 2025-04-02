@@ -6,7 +6,7 @@
 
 [![npm package](https://nodei.co/npm/is-what-type.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-what-type)
 
-> A simple type-checking utility library.
+> A simple utility library for type checking.
 
 [![NPM Version](https://img.shields.io/npm/v/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
 [![NPM Downloads](https://img.shields.io/npm/dm/is-what-type.svg?style=flat)](https://npmjs.org/package/is-what-type)
@@ -33,14 +33,14 @@ bun add is-what-type
 
 :::
 
-## Feature Overview
+## Features
 
-- :clipboard: **API Count**: Provides 15 practical type-checking functions.
-- :zap: **Efficient and Accurate**: Provides efficient type-checking functions to ensure accurate results.
-- :book: **Easy to Use**: Offers a clean and concise API design for quick developer adoption.
-- :package: **Cross-Platform Compatibility**: Works in both JavaScript and TypeScript environments.
-- :white_check_mark: **Unit Test Coverage**: All functionalities are thoroughly covered by unit tests to ensure code quality.
-- :link: **No External Dependencies**: Does not rely on any third-party libraries, keeping it lightweight.
+- :clipboard: **API Count**: Provides 15 practical type detection functions.
+- :zap: **Efficient & Accurate**: Efficient type detection functions with guaranteed accuracy.
+- :book: **Easy to Use**: Simple and intuitive API design for quick onboarding.
+- :package: **Compatibility**: Works in both JavaScript and TypeScript environments.
+- :white_check_mark: **Unit Test Coverage**: All features are fully covered by unit tests.
+- :link: **Zero Dependencies**: No third-party dependencies for lightweight usage.
 
 ## API List
 
@@ -69,16 +69,7 @@ console.log(getType(new WeakSet())); // 'WeakSet'
 console.log(getType(new Promise(() => {}))); // 'Promise'
 console.log(getType(Symbol())); // 'Symbol'
 console.log(getType(new Int8Array())); // 'Int8Array'
-console.log(getType(new Uint8Array())); // 'Uint8Array'
-console.log(getType(new Uint8ClampedArray())); // 'Uint8ClampedArray'
-console.log(getType(new Int16Array())); // 'Int16Array'
-console.log(getType(new Uint16Array())); // 'Uint16Array'
-console.log(getType(new Int32Array())); // 'Int32Array'
-console.log(getType(new Uint32Array())); // 'Uint32Array'
-console.log(getType(new Float32Array())); // 'Float32Array'
-console.log(getType(new Float64Array())); // 'Float64Array'
-console.log(getType(new BigInt64Array())); // 'BigInt64Array'
-console.log(getType(new BigUint64Array())); // 'BigUint64Array'
+// ... (other TypedArray examples)
 ```
 
 ### isAbsoluteURL
@@ -138,6 +129,20 @@ console.log(isESModule(esModule)); // true
 console.log(isESModule(generatorFunction)); // false
 console.log(isESModule(generatorObject)); // false
 console.log(isESModule({})); // false
+```
+
+### isFunction
+
+Check if a value is a function.
+
+```typescript
+import { isFunction } from 'is-what-type';
+
+isFunction(async () => { }); // true
+isFunction(() => { }); // true
+isFunction(123); // false
+isFunction('string'); // false
+isFunction({}); // false
 ```
 
 ### isError

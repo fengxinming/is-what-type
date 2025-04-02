@@ -12,7 +12,7 @@
 
 > **default**(`value`): `value is number`
 
-Defined in: [isNumber.ts:25](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isNumber.ts#L25)
+Defined in: [isNumber.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isNumber.ts#L25)
 
 Check if the value is a number
 
