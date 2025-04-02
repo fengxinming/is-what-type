@@ -12,7 +12,7 @@
 
 > **default**(`value`): `value is number`
 
-定义于: [isLength.ts:22](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isLength.ts#L22)
+定义于: [isLength.ts:22](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isLength.ts#L22)
 
 Checks if `value` is a valid array-like length.
 

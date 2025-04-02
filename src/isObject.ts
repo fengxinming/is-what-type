@@ -22,6 +22,6 @@
  * @param value - The value to check
  * @returns `true` if the value is an object, `false` otherwise
  */
-export default function isObject(value: unknown): value is object {
+export default function isObject<T = object>(value: unknown): value is T {
   return value !== null && typeof value === 'object';
 }

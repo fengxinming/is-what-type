@@ -10,11 +10,17 @@
 
 ### default()
 
-> **default**(`value`): `value is object`
+> **default**\<`T`\>(`value`): `value is T`
 
-Defined in: [isObject.ts:25](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isObject.ts#L25)
+Defined in: [isObject.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isObject.ts#L25)
 
 Check if the value is an object.
+
+#### Type Parameters
+
+##### T
+
+`T` = `object`
 
 #### Parameters
 
@@ -26,7 +32,7 @@ The value to check
 
 #### Returns
 
-`value is object`
+`value is T`
 
 `true` if the value is an object, `false` otherwise
 

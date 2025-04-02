@@ -12,6 +12,7 @@
 - [isAsyncFunction](isAsyncFunction.md)
 - [isError](isError.md)
 - [isESModule](isESModule.md)
+- [isFunction](isFunction.md)
 - [isIterable](isIterable.md)
 - [isLeapYear](isLeapYear.md)
 - [isLength](isLength.md)
@@ -21,3 +22,4 @@
 - [isPlainObject](isPlainObject.md)
 - [isPromiseLike](isPromiseLike.md)
 - [isValidDate](isValidDate.md)
+- [typings](typings.md)

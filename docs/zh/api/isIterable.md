@@ -12,13 +12,15 @@
 
 > **default**\<`T`\>(`value`): `value is Iterable<T, any, any>`
 
-定义于: [isIterable.ts:22](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isIterable.ts#L22)
+定义于: [isIterable.ts:22](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isIterable.ts#L22)
 
 Check if the value is an iterable object.
 
 #### 类型参数
 
-• **T** = `any`
+##### T
+
+`T` = `any`
 
 #### 参数
 

@@ -1,7 +1,3 @@
-**is-what-type**
-
-***
-
 # is-what-type
 
 [![npm 包](https://nodei.co/npm/is-what-type.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-what-type)

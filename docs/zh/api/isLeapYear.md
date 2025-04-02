@@ -12,7 +12,7 @@
 
 > **default**(`value`): `boolean`
 
-定义于: [isLeapYear.ts:27](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isLeapYear.ts#L27)
+定义于: [isLeapYear.ts:27](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isLeapYear.ts#L27)
 
 Check if the year is a leap year
 

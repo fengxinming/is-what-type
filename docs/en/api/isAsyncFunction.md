@@ -12,19 +12,21 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-Defined in: [isAsyncFunction.ts:22](https://github.com/fengxinming/is-what-type/blob/0c5056645ee3ca915d569899c6e6192d9d8dc8a8/src/isAsyncFunction.ts#L22)
+Defined in: [isAsyncFunction.ts:23](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isAsyncFunction.ts#L23)
 
 Check if value is an async function
 
 #### Type Parameters
 
-• **T** = `unknown`
+##### T
+
+`T` = [`AsyncFunction`](typings.md#asyncfunction)
 
 #### Parameters
 
 ##### value
 
-`T`
+`unknown`
 
 The value to check
 
