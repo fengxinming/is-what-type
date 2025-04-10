@@ -22,4 +22,5 @@
 - [isPlainObject](isPlainObject.md)
 - [isPromiseLike](isPromiseLike.md)
 - [isValidDate](isValidDate.md)
+- [isWhat](isWhat.md)
 - [typings](typings.md)

@@ -12,9 +12,11 @@
 
 > **default**(`value`): `boolean`
 
-Defined in: [isAbsoluteURL.ts:23](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isAbsoluteURL.ts#L23)
+Defined in: [isAbsoluteURL.ts:25](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isAbsoluteURL.ts#L25)
 
 Checks if `url` is an absolute URL.
+
+校验是否是绝对URL
 
 #### Parameters
 

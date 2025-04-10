@@ -12,9 +12,11 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-Defined in: [isPlainObject.ts:27](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isPlainObject.ts#L27)
+Defined in: [isPlainObject.ts:29](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isPlainObject.ts#L29)
 
 Check if the value is a plain object
+
+校验是否是一个普通对象
 
 #### Type Parameters
 

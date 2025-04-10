@@ -1,6 +1,8 @@
 /**
  * Check if the value is a number
  *
+ * 校验是否是一个数字
+ *
  * @example
  * ```js
  * import { isNumber } from 'is-what-type';

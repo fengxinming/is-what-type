@@ -1,6 +1,8 @@
 /**
  * Checks if `value` is a valid array-like length.
  *
+ * 校验是否是一个有效的数组长度
+ *
  * @example
  * ```js
  * import { isLength } from 'is-what-type';

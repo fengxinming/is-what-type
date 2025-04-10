@@ -1,6 +1,8 @@
 /**
  * Check if the value is an Error object
  *
+ * 校验是否是错误对象
+ *
  * @example
  * ```js
  * import { isError } from 'is-what-type';

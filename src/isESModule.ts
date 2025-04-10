@@ -7,6 +7,8 @@ const hasSymbol
 /**
  * Check if the value is an ES Module
  *
+ * 校验是否是 ES Module
+ *
  * @example
  * ```js
  * import { isESModule } from 'is-what-type';

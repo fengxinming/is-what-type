@@ -12,9 +12,11 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-定义于: isFunction.ts:20
+定义于: [isFunction.ts:22](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isFunction.ts#L22)
 
 Check if value is an async function
+
+校验是否为函数
 
 #### 类型参数
 

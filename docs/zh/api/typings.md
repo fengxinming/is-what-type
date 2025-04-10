@@ -12,7 +12,7 @@
 
 > **AsyncFunction**\<`Args`, `Result`\> = (...`args`) => `Promise`\<`Result`\>
 
-定义于: typings.ts:1
+定义于: [typings.ts:1](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/typings.ts#L1)
 
 #### 类型参数
 
