@@ -1,6 +1,8 @@
 /**
  * Check if the value is a valid date
  *
+ * 校验是否是一个有效的日期
+ *
  * @example
  * ```js
  * import { isValidDate } from 'is-what-type';

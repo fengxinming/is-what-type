@@ -12,9 +12,11 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-定义于: [isObject.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isObject.ts#L25)
+定义于: [isObject.ts:27](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isObject.ts#L27)
 
 Check if the value is an object.
+
+校验是否是一个对象
 
 #### 类型参数
 

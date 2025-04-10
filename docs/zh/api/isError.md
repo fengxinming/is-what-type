@@ -12,9 +12,11 @@
 
 > **default**(`value`): `value is Error`
 
-定义于: [isError.ts:22](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isError.ts#L22)
+定义于: [isError.ts:24](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isError.ts#L24)
 
 Check if the value is an Error object
+
+校验是否是错误对象
 
 #### 参数
 

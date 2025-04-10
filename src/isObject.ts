@@ -1,6 +1,8 @@
 /**
  * Check if the value is an object.
  *
+ * 校验是否是一个对象
+ *
  * @example
  * ```js
  * import { isObject } from 'is-what-type';

@@ -12,9 +12,11 @@
 
 > **default**(`value`): `value is number`
 
-定义于: [isNumber.ts:25](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isNumber.ts#L25)
+定义于: [isNumber.ts:27](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isNumber.ts#L27)
 
 Check if the value is a number
+
+校验是否是一个数字
 
 #### 参数
 

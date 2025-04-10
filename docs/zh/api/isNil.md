@@ -12,9 +12,11 @@
 
 > **default**(`value`): value is undefined \| null
 
-定义于: [isNil.ts:21](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isNil.ts#L21)
+定义于: [isNil.ts:23](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isNil.ts#L23)
 
 Check if the value is null or undefineds
+
+校验是否是 null 或者 undefined
 
 #### 参数
 

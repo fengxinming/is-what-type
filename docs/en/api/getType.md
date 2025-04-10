@@ -12,9 +12,11 @@
 
 > **default**(`value`): `string`
 
-Defined in: [getType.ts:41](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/getType.ts#L41)
+Defined in: [getType.ts:43](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/getType.ts#L43)
 
 Get type of value
+
+获取值的类型
 
 #### Parameters
 

@@ -4,6 +4,8 @@ import isValidDate from './isValidDate';
 /**
  * Check if the year is a leap year
  *
+ * 校验是否为闰年
+ *
  * @example
  * ```js
  * import { isLeapYear } from 'is-what-type';

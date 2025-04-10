@@ -12,9 +12,11 @@
 
 > **default**\<`T`\>(`value`): `value is T`
 
-Defined in: [isESModule.ts:26](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isESModule.ts#L26)
+Defined in: [isESModule.ts:28](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isESModule.ts#L28)
 
 Check if the value is an ES Module
+
+校验是否是 ES Module
 
 #### Type Parameters
 

@@ -12,9 +12,11 @@
 
 > **default**\<`T`\>(`value`): `value is ArrayLike<T>`
 
-Defined in: [isArrayLike.ts:22](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isArrayLike.ts#L22)
+Defined in: [isArrayLike.ts:24](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isArrayLike.ts#L24)
 
 Check if the value is array-like
+
+校验是否是类数组
 
 #### Type Parameters
 

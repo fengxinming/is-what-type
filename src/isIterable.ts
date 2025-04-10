@@ -1,6 +1,8 @@
 /**
  * Check if the value is an iterable object.
  *
+ * 校验是否是一个可迭代对象
+ *
  * @example
  * ```js
  * import { isIterable } from 'is-what-type';

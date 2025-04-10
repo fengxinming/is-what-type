@@ -2,6 +2,8 @@
 /**
  * Check if the value is null or undefineds
  *
+ * 校验是否是 null 或者 undefined
+ *
  * @example
  * ```js
  * import { isNil } from 'is-what-type';

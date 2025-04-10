@@ -3,6 +3,8 @@ import isObject from './isObject';
 /**
  * Check if the value is a Promise-like object.
  *
+ * 校验是否是一个 Promise-like 对象
+ *
  * @example
  * ```js
  * import { isPromiseLike } from 'is-what-type';

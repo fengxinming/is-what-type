@@ -3,6 +3,8 @@ import isLength from './isLength';
 /**
  * Check if the value is array-like
  *
+ * 校验是否是类数组
+ *
  * @example
  * ```js
  * import { isArrayLike } from 'is-what-type';

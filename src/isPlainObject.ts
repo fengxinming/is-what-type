@@ -4,6 +4,8 @@ import isObject from './isObject';
 /**
  * Check if the value is a plain object
  *
+ * 校验是否是一个普通对象
+ *
  * @example
  * ```js
  * import { isPlainObject } from 'is-what-type';

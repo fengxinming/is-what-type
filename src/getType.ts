@@ -1,6 +1,8 @@
 /**
  * Get type of value
  *
+ * 获取值的类型
+ *
  * @example
  * ```js
  * import { getType } from 'is-what-type';

@@ -12,9 +12,11 @@
 
 > **default**(`value`): `value is Date`
 
-定义于: [isValidDate.ts:22](https://github.com/fengxinming/is-what-type/blob/f4e09002a93d5c5e57581d09499897cd37947140/src/isValidDate.ts#L22)
+定义于: [isValidDate.ts:24](https://github.com/fengxinming/is-what-type/blob/b8637cab33d631a672cfc558f39e82fe4f36481a/src/isValidDate.ts#L24)
 
 Check if the value is a valid date
+
+校验是否是一个有效的日期
 
 #### 参数
 

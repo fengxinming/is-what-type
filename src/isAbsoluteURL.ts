@@ -4,6 +4,8 @@ const PROTOCOL = /^([a-z][a-z\d+\-.]*:)?\/\//i;
 /**
  * Checks if `url` is an absolute URL.
  *
+ * 校验是否是绝对URL
+ *
  * @example
  * ```js
  * import { isAbsoluteURL } from 'is-what-type';

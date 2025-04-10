@@ -4,6 +4,8 @@ import { AsyncFunction } from './typings';
 /**
  * Check if value is an async function
  *
+ * 校验是否为异步函数
+ *
  * @example
  * ```js
  * import { isAsyncFunction } from 'is-what-type';
