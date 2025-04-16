@@ -26,7 +26,7 @@ import isObject from './isObject';
  * @param value The value to check
  * @returns `true` if the value is a plain object, else `false`
  */
-export default function isPlainObject<T = object>(value: T): value is T {
+export default function isPlainObject<T = object>(value: unknown): value is T {
   if (!isObject(value) || getType(value) !== 'Object') {
     return false;
   }
